@@ -56,11 +56,11 @@
   </head>
 
   <body class="font-manrope">
-    <header class="container mx-auto">
-      <div class="hero">
+    <header>
+      <div class="mx-5 md:mx-5 lg:mx-32">
         <div class="hero-content flex-col lg:flex-row">
-          <div>
-            <h1 class="text-3xl lg:text-7xl font-extrabold">
+          <div class="lg:w-3/5">
+            <h1 class="text-3xl md:text-5xl lg:text-7xl font-extrabold">
               It's good <br />
               tea time at The <br />
               Tea House
@@ -72,16 +72,16 @@
             <button class="btn btn-primary">Explore More</button>
           </div>
 
-          <div class="">
+          <div class="w-full lg:w-2/5  ">
             <div>
-              <img src="./images/banner.png" class="max-w-sm" />
+              <img src="./images/banner.png" class="w-full h-auto md:h-2/6 "/>
             </div>
-                     <!-- Rating Badge -->
+            <!-- Rating Badge -->
             <div
               class="-mt-16 flex items-center drop-shadow-lg p-5 w-60 bg-white gap-4"
             >
               <div>
-                <i class="fa-solid fa-star  text-3xl text-yellow-400"></i>
+                <i class="fa-solid fa-star text-3xl text-yellow-400"></i>
               </div>
               <div>
                 <h1 class="font-extrabold">5.00</h1>
@@ -93,18 +93,54 @@
       </div>
     </header>
 
-    <main class="container mx-auto">
+    <main class="mx-5 md:mx-10 lg:mx-32">
+      <!-- Featured Section -->
 
-      <section class="featured-product my-24 text-center">
+      <section class="text-center my-24">
+        <h1 class="font-extrabold text-5xl mb-5">Our Featured Products</h1>
+        <p class="lg:max-w-3xl mb-12 mx-auto">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected
+          humour, or randomised words which don't look even slightly believable.
+        </p>
 
-        <h1 class="font-extrabold text-3xl ">Our Featured Products</h1>
-        <h1>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </h1>
+        <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center">
+          <!-- First Card  -->
 
-
-        
+          <div class="card p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4]">
+            <figure><img src="./images/tea-1.png" alt="Tea" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4]">
+            <figure><img src="./images/tea-2.png" alt="Tea" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Black Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4]">
+            <figure><img src="./images/tea-3.png" alt="Tea" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Milk Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+          <div class="card p-8 bg-gradient-to-r from-[#f4f4f4] to-[#f4f4f4]">
+            <figure><img src="./images/tea-4.png" alt="Tea" /></figure>
+            <div class="card-body justify-center">
+              <h2 class="text-2xl font-bold">Lemon Tea</h2>
+              <p>Creamer could be replaced by fresh milk</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-
+      <section>
+        
+      </section>
     </main>
 
     <footer></footer>
